@@ -1,0 +1,40 @@
+body {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(247,119,214,1) 100%);
+    }
+
+.main {
+    display:grid;
+    width:100%;
+}
+
+.frame {
+    background-color: whitesmoke;
+    justify-self: center;
+    display: flex;
+    margin:300px;
+    display:flex;
+    border-radius: 20%;
+    height:400px;
+    align-items: center;
+    flex-direction: column;
+    width:400px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.frame h1 {
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-weight: 100;
+}
+
+.frame h2 {
+    font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+#icon {
+    height:200px;
+    width:200px;
+    border-radius: 60%;
+    align-items: center;
+    
+}
