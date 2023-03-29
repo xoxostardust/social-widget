@@ -39,6 +39,49 @@ body {
     height:200px;
     width:200px;
     border-radius: 60%;
-    align-items: center;
-    
+    align-items: center;   
 }
+
+.description {
+    text-align:center;
+    margin-top:20px;
+    overflow:hidden;
+    height:16em;
+}
+
+
+.description > .one > .two {
+    height:5em;
+    margin-top:-10em;
+    display:inline-block;
+  }
+  
+  .description div:first-child {
+    animation: text-animation 2s infinite;
+  }
+  
+  .one {
+    background-color:#d8209b;
+  }
+  .two {
+    background-color:#e240b4;
+  }
+  .three {
+    background-color:#f071cc;
+  }
+  .four {
+    background-color:rgb(248, 200, 238);
+  }
+  
+  @keyframes text-animation {
+    0% {margin-top: 0;}
+    10% {margin-top: -6em;}
+    20% {margin-top: -6em;}
+    30% {margin-top: -5em;}
+    40% {margin-top: -8em;}
+    60% {margin-top: -5em;}
+    70% {margin-top: -5em;}
+    80% {margin-top: -5em;}
+    90% {margin-top: 0;}
+    100% {margin-top: 0;}
+  }
