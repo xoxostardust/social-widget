@@ -74,6 +74,11 @@ body {
     width:1200px;
 }
 
+.spotify:hover {
+    transform: scale(1.1);
+    transition: transform 120ms ease-out;
+}
+
 .spotify h2 {
     font-family: 'Carrois Gothic SC', sans-serif;
 }
