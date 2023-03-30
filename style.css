@@ -77,13 +77,23 @@ body {
   
   @keyframes text-animation {
     0% {margin-top: 0;}
-    10% {margin-top: -3.5em;}
-    20% {margin-top: -7em;}
-    30% {margin-top: -10.5em;}
-    40% {margin-top: -10.5em;}
+    10% {margin-top: 0;}
+    15% {margin-top: 0;}
+    20% {margin-top: -3,5em;}
+    25% {margin-top: -3.5em;}
+    30% {margin-top: -3.5em;}
+    35% {margin-top: -7em;}
+    40% {margin-top: -7em;}
+    45% {margin-top: -7em;}
+    50% {margin-top: -10.5em;}
+    55% {margin-top: -10.5em;}
     60% {margin-top: -10.5em;}
+    65% {margin-top: -7em;}
     70% {margin-top: -7em;}
+    75% {margin-top: -7em;}
     80% {margin-top: -3.5em;}
-    90% {margin-top: 0em;}
-    100% {margin-top: 0em;}
+    85% {margin-top: -3.5em;}
+    90% {margin-top: -3.5em;}
+    95% {margin-top: 0;}
+    100% {margin-top: 0;}
   }
