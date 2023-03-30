@@ -13,7 +13,6 @@ body {
     justify-self: center;
     display: flex;
     margin:300px;
-    display:flex;
     border-radius: 20%;
     height:400px;
     align-items: center;
@@ -22,20 +21,38 @@ body {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+
+#tracks {
+  display:none;
+}
+
 .frame img:hover {
   transform: scale(1.1);
   transition: transform 250ms ease-out;
-  animation: test 250ms ease-out;
 }
 /* make small menu pop out on sides when hover over ; access 2 four things, spotify, etc */
 
-#icon:hover .menu {
-  display:flex;
+.frame img:hover + .menu {
+  display:block;
+  transform: scale(1.1);
+  transition: transform 250ms ease-out;
+}
+
+.menu:hover {
+  display:block;
+  background-color:black;
+  color:pink;
+  transform: scale(1.1);
+  transition: transform 250ms ease-out;
 }
 
 .menu {
   display:none;
-  background-color: black;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  width:50px;
+  text-align:center;
+  border-radius: 60%;
+  background-color: rgb(224, 193, 221);
 }
 
 
@@ -123,12 +140,13 @@ body {
     left:500px;
     top:200px;
     animation:Fade 2s;
-  }
+  }*/
 
   @keyframes Fade {
     0% {
       background-color: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(247,119,214,1) 100%);
       opacity:10%;
+      
     }
     25% {
         opacity: 25%;
@@ -141,4 +159,4 @@ body {
       background-color: linear-gradient(90deg, rgba(165,191,193,1) 0%, rgba(185,243,255,1) 100%);;
       opacity:75%;
     }
- } */
+ } 
