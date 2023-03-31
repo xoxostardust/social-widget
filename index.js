@@ -1,8 +1,14 @@
 const button = document.getElementById('button');
+const buttonTwo = document.getElementById('about')
 
 button.addEventListener('click', () => {
     alert("pretend this is a super cool css transition!!!");
   }); 
+
+  buttonTwo.addEventListener('click', () => {
+    alert("pretend this is a super cool css transition!!!");
+  }); 
+
 // const music = document.getElementById('music');
 // const musicProfile = document.getElementById('tracks');
 // const homeProfile = document.getElementById('home');
