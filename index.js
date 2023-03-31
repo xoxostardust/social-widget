@@ -1,7 +1,7 @@
 const button = document.getElementById('button');
 
 button.addEventListener('click', () => {
-    alert("i am crying in the club so very hard waa waaa uwu sad");
+    alert("pretend this is a super cool css transition!!!");
   }); 
 // const music = document.getElementById('music');
 // const musicProfile = document.getElementById('tracks');
