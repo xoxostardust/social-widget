@@ -13,7 +13,6 @@ body {
     justify-self: center;
     display: flex;
     margin:300px;
-    display:flex;
     border-radius: 20%;
     height:400px;
     align-items: center;
@@ -21,6 +20,42 @@ body {
     width:400px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+
+
+#tracks {
+  display:none;
+}
+
+.frame img:hover {
+  transform: scale(1.1);
+  transition: transform 250ms ease-out;
+}
+/* make small menu pop out on sides when hover over ; access 2 four things, spotify, etc */
+
+.frame img:hover + .menu {
+  display:block;
+  transform: scale(1.1);
+  transition: transform 250ms ease-out;
+}
+
+.menu:hover {
+  display:block;
+  background-color:black;
+  color:pink;
+  transform: scale(1.1);
+  transition: transform 250ms ease-out;
+}
+
+.menu {
+  display:none;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  width:50px;
+  text-align:center;
+  border-radius: 60%;
+  background-color: rgb(224, 193, 221);
+}
+
+
 
 .frame h1 {
     font-family: 'Libre Barcode 39 Text', cursive;
@@ -39,61 +74,146 @@ body {
     height:200px;
     width:200px;
     border-radius: 60%;
-    align-items: center;
+    align-items: center;   
 }
 
-.carousel {
-    text-align: center;
-    display:flex;
+.description {
+    text-align:center;
+    margin-top:1em;
+    margin-bottom:1em;
     overflow:hidden;
-    position:relative;
-    width: 400px;
-    height:300px;
-    align-items: center;
-    
+    height:10em;
+}
+
+
+.description > .one > .two {
+    /* display:inline-block; */
+  }
+  
+  .description div:first-child {
+    animation: text-animation 20s infinite;
+  }
+  
+  .one {
+    background-color:#d8209b;
+  }
+
+  .two {
+    background-color:#e240b4;
+  }
+
+  .three {
+    background-color:#f071cc;
+  }
+
+  .four {
+    background-color:rgb(248, 200, 238);
+  }
+  
+  @keyframes text-animation {
+    0% {margin-top: 0;}
+    10% {margin-top: 0;}
+    15% {margin-top: 0;}
+    20% {margin-top: -3,5em;}
+    25% {margin-top: -3.5em;}
+    30% {margin-top: -3.5em;}
+    35% {margin-top: -7em;}
+    40% {margin-top: -7em;}
+    45% {margin-top: -7em;}
+    50% {margin-top: -10.5em;}
+    55% {margin-top: -10.5em;}
+    60% {margin-top: -10.5em;}
+    65% {margin-top: -7em;}
+    70% {margin-top: -7em;}
+    75% {margin-top: -7em;}
+    80% {margin-top: -3.5em;}
+    85% {margin-top: -3.5em;}
+    90% {margin-top: -3.5em;}
+    95% {margin-top: 0;}
+    100% {margin-top: 0;}
+  }
+
+  /* .three:hover:after {
+    content: url(/img/icon.png);
+    display:block;
+    position:absolute;
+    left:500px;
+    top:200px;
+    animation:Fade 2s;
+  }*/
+
+  @keyframes Fade {
+    0% {
+      background-color: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(247,119,214,1) 100%);
+      opacity:10%;
+      
+    }
+    25% {
+        opacity: 25%;
+    }
+
+    50% {
+      opacity:50%;
+    }
+    75% {
+      background-color: linear-gradient(90deg, rgba(165,191,193,1) 0%, rgba(185,243,255,1) 100%);;
+      opacity:75%;
+    }
+ } 
+
+
+ .carousel {
+  text-align: center;
+  display:flex;
+  overflow:hidden;
+  position:relative;
+  width: 400px;
+  height:300px;
+  align-items: center;
+  
 }
 
 .border {
-    animation: scroll 10s linear infinite;
-    display:flex;
-    width:1200px;
+  animation: scroll 10s linear infinite;
+  display:flex;
+  width:1200px;
 }
 
 @keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(-963px)}
+0% { transform: translateX(0); }
+100% { transform: translateX(-963px)}
 }
 
 .spotify img {
-    height:200px;
-    width:200px;
-    box-shadow:  0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  height:200px;
+  width:200px;
+  box-shadow:  0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .spotify {
-    width:1200px;
+  width:1200px;
 }
 
 .spotify:hover {
-    transform: scale(1.1);
-    transition: transform 120ms ease-out;
+  transform: scale(1.1);
+  transition: transform 120ms ease-out;
 }
 
 .spotify h2 {
-    font-family: 'Carrois Gothic SC', sans-serif;
+  font-family: 'Carrois Gothic SC', sans-serif;
 }
 
 .hide {
-    display:none;
+  display:none;
 }
 
 #button {
-    font-family: 'Carrois Gothic SC', sans-serif;
-    font-size:30px;
-    background-color:transparent;
-    border:none;
-    display: block;
-	cursor: pointer;
-	overflow: hidden;
-	border-radius: 5px;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  font-size:30px;
+  background-color:transparent;
+  border:none;
+  display: block;
+cursor: pointer;
+overflow: hidden;
+border-radius: 5px;
 }
