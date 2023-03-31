@@ -41,17 +41,30 @@ body {
 .menu:hover {
   display:block;
   background-color:black;
-  color:pink;
+  color:rgb(224, 193, 221);
+  animation: Fade 120ms ease-out;
   transform: scale(1.1);
-  transition: transform 250ms ease-out;
+}
+
+.menu:hover a {
+  text-decoration: none;
+  color:rgb(224, 193, 221);
+}
+
+.menu a {
+  text-decoration:none;
+  color:black;
 }
 
 .menu {
   display:none;
   font-family: 'Carrois Gothic SC', sans-serif;
-  width:50px;
+  width:75px;
+  height:50px;
+  color:black;
+  text-decoration: none;
   text-align:center;
-  border-radius: 60%;
+  border-radius: 50%;
   background-color: rgb(224, 193, 221);
 }
 
@@ -144,7 +157,7 @@ body {
 
   @keyframes Fade {
     0% {
-      background-color: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(247,119,214,1) 100%);
+      /* background-color: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(247,119,214,1) 100%); */
       opacity:10%;
       
     }
@@ -156,7 +169,7 @@ body {
       opacity:50%;
     }
     75% {
-      background-color: linear-gradient(90deg, rgba(165,191,193,1) 0%, rgba(185,243,255,1) 100%);;
+      /* background-color: linear-gradient(90deg, rgba(165,191,193,1) 0%, rgba(185,243,255,1) 100%);; */
       opacity:75%;
     }
  } 
